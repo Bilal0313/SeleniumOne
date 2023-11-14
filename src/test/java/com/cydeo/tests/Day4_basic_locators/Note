@@ -1,5 +1,5 @@
 Locators in the selenium
-1 id
+1 id -- id are more dynamic
 2 name
 3 tagName
 4 className
