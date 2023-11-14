@@ -6,7 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriverFactory {
 
+    private static WebDriver driver;
 
+    public static WebDriver getDriver() {
+        return driver;
+    }
+
+    public static void setDriver(WebDriver driver) {
+        WebDriverFactory.driver = driver;
+    }
 
     public static WebDriver getDriver (String browserType){
 
