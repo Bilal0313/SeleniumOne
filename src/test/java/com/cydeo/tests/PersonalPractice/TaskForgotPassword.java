@@ -21,7 +21,6 @@ public class TaskForgotPassword {
         System.out.println("The Title is correct too");
 
         driver.close();
-
     }
 
 }
