@@ -1,0 +1,9 @@
+Locators in the selenium
+1 id
+2 name
+3 tagName
+4 className
+5 linkText
+6 PartialLinkText
+7 xPath
+8 CSS
