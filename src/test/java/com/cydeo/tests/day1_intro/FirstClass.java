@@ -1,4 +1,4 @@
-package com.cydeo.tests;
+package com.cydeo.tests.day1_intro;
 
 import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
