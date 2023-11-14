@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FireFoxOpenBrowser {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
 
         WebDriverManager.firefoxdriver().setup();
