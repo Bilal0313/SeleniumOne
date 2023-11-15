@@ -28,6 +28,7 @@ public class verifyConfirmationMessage {
         boolean a = message.getText().equals("Your e-mail's been sent!");
 
         System.out.println(a);
+        driver.close();
 
         // what is getAttribute method?
 
