@@ -1,4 +1,4 @@
-package com.cydeo.tests.day6;
+package com.cydeo.tests.day6_css;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
