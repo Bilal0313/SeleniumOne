@@ -1,0 +1,8 @@
+Xpath
+
+
+ 1 absulote Xpath
+     // // //  get the location by parent to the child
+
+// button[@onclick='button1()']
+
