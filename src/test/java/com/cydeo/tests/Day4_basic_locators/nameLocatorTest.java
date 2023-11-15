@@ -36,6 +36,8 @@ public class nameLocatorTest {
         // click it
         signUpBtm.click();
 
+        driver.close();
+
 
 
 
