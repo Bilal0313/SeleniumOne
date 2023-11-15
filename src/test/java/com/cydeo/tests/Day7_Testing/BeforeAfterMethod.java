@@ -43,7 +43,7 @@ public class BeforeAfterMethod {
     }
 
 
-    @@AfterClass
+    @AfterClass
     public void TheEnd(){
         System.out.println("After Class Done");
     }
