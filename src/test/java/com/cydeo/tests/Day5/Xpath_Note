@@ -16,6 +16,6 @@ search for selenium
 click search button
 verify 1-48 of 304 results for selenium
 
-
+//div[@class='a-section a-spacing-small a-spacing-top-small']
 *
 
