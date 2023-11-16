@@ -1,4 +1,4 @@
-package com.cydeo.tests.CydeoWeb.Day1;
+package com.cydeo.tests.CydeoWeb.Other;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
