@@ -4,6 +4,7 @@ import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,6 +19,7 @@ public class SelectDropDownTest {
     @BeforeMethod
     public void setUp(){
         driver = WebDriverFactory.getDriver("chrome");
+        driver.manage().window().maximize();
     }
 
 
@@ -25,23 +27,62 @@ public class SelectDropDownTest {
     @Test
     public void test1(){
 
-        driver.get("https://practice.cydeo.com/multiple_buttons");
+        driver.get("https://practice.cydeo.com/dropdown");
 
-        List<WebElement> button = driver.findElements(By.tagName("button"));
+        WebElement dropDoenBtn = driver.findElement(By.id("state"));
 
-        System.out.println("button.size() = " + button.size());
+        Select select = new Select(dropDoenBtn);
+        List<WebElement> options = select.getOptions();
+        System.out.println(options.size());
 
-        Assert.assertEquals(button.size(),6,"the size are 6");
+        for (WebElement option : options) {
+            if (option.getText().equals("Florida")){
+                option.click();
+                System.out.println(option.getText());
+            }else {
 
-        // iter
-        for (WebElement webElement : button) {
-            // System.out.println("webElement.getText() = " + webElement.getText());
-            System.out.println(webElement.isDisplayed());
-            Assert.assertTrue(webElement.isDisplayed(),"verify buttons are displayed");
+            }
         }
 
-        // click second button
-        button.get(1).click();
+
+    }
+
+    @Test
+    public void test2()throws InterruptedException{
+        driver.get("https://practice.cydeo.com/dropdown");
+
+        WebElement dropDoenBtn = driver.findElement(By.id("state"));
+
+        Select select = new Select(dropDoenBtn);
+
+        String expectedOption = "Select a State";
+        String actuaOption = select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedOption,actuaOption,"Verify forst select");
+
+        // how to select Options from dropdown
+        // 1. Select using visible text
+
+        Thread.sleep(3000);
+        select.selectByVisibleText("Virginia");
+
+        expectedOption = "Virginia";
+        actuaOption = select.getFirstSelectedOption().getText();
+        Assert.assertEquals(actuaOption,expectedOption,"verify first selection");
+
+        // 2 SELECT USING INDEX
+        Thread.sleep(5000);
+        select.selectByIndex(51);
+
+        expectedOption = "Wyoming";
+        actuaOption = select.getFirstSelectedOption().getText();
+        Assert.assertEquals(actuaOption,expectedOption,"verify first selection");
+
+        // 3 SELECT BY VALUE
+        Thread.sleep(3000);
+        select.selectByValue("TX");
+        expectedOption = "Texas";
+        actuaOption = select.getFirstSelectedOption().getText();
+        Assert.assertEquals(actuaOption,expectedOption,"verify first selection");
 
 
     }
