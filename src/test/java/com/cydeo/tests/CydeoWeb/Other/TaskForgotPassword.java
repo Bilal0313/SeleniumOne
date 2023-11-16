@@ -1,4 +1,4 @@
-package com.cydeo.tests.PersonalPractice.Other;
+package com.cydeo.tests.CydeoWeb.Other;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
