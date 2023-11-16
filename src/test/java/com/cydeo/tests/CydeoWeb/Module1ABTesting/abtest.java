@@ -123,8 +123,4 @@ public class abtest {
     public void tearDown(){
         driver.quit();
     }
-
-
-
-
 }
