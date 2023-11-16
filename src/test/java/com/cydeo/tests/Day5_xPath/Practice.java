@@ -1,4 +1,4 @@
-package com.cydeo.tests.Day5;
+package com.cydeo.tests.Day5_xPath;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
