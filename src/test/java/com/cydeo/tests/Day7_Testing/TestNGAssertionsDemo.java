@@ -24,6 +24,36 @@ public class TestNGAssertionsDemo {
 
     }
 
+    @Test
+    public void test2(){
+        Assert.assertEquals("test2","test2","The 2 tests are not equal");
+    }
+
+    @Test
+    public void test3(){
+        String expectedTitle = "Cyb";
+        String actualTitle="Cybertek";
+
+        Assert.assertTrue(expectedTitle.contains(actualTitle),"Test 2 (The title are equal)");
+    }
+
+    @Test
+    public void test4(){
+        String email ="Bilal@gmail.com";
+        Assert.assertTrue(email.contains("@"),"The email @ is not there ");
+
+    }
+
+    @Test
+    public void test5(){
+        Assert.assertFalse(0>1,"Verify that 0 is not greater then 1");
+    }
+
+    @Test
+    public void test6(){
+
+    }
+
     @AfterClass
     public void done(){
         System.out.println("Browser Close");
