@@ -1,4 +1,4 @@
-package com.cydeo.tests.PersonalPractice;
+package com.cydeo.tests.PersonalPractice.Other;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
