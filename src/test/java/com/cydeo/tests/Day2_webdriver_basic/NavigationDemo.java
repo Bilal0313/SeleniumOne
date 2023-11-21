@@ -8,6 +8,8 @@ public class NavigationDemo {
 
     public static void main(String[] args) throws InterruptedException {
 
+        // navigate().back();    navigate().forward();    navigate().refresh();
+
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
