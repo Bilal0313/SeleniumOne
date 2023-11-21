@@ -7,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GetTitleAndUrl {
     public static void main(String[] args) {
 
+        // navigate() , getTitle();,getCurrentUrl();
+
+
+
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
