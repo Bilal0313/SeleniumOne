@@ -1,4 +1,4 @@
-package com.cydeo.tests.CydeoWeb.Module1ABTesting;
+package com.cydeo.tests.CydeoWeb.A_Module1ABTesting;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -123,8 +123,4 @@ public class abtest {
     public void tearDown(){
         driver.quit();
     }
-
-
-
-
 }
