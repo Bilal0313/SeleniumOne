@@ -1,4 +1,4 @@
-package com.cydeo.tests.CydeoWeb.A_Module1ABTesting;
+package com.cydeo.tests.CydeoWeb.A1_Module1ABTesting;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
